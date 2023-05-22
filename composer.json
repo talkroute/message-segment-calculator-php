@@ -14,6 +14,11 @@
             "email": "ehowey@talkroute.com"
         }
     ],
+    "scripts": {
+        "post-install-cmd": [
+            "@php -r \"file_exists('.git/hooks/pre-commit') || (copy('.githooks/pre-commit', '.git/hooks/pre-commit') && chmod('.git/hooks/pre-commit', 0755) );\""
+        ]
+    },
     "require": {
         "php": "^8.1",
         "ext-mbstring" : "*"
