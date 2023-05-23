@@ -3,6 +3,7 @@
     "description": "A calculator that gives you the segments (SMS) used for sending a message.",
     "type": "library",
     "license": "MIT",
+    "version": "1.0.0",
     "autoload": {
         "psr-4": {
             "Talkroute\\MessageSegmentCalculator\\": "src/"
